@@ -19,6 +19,31 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+
+        $(document).ready( function () {
+
+          // $('.page-header h1').text('The Test is working!');
+
+          // $('body.home').append(
+
+          //   '<div class="jumbotron">' +
+          //     '<h1 class="display-3">Jumbotron Test!</h1>' +
+          //   '</div>' +
+          //     '<div class="container">' +
+          //       '<div class="row">' +
+          //         '<div class="col-md-12">' +
+          //           '<button class="btn-primary btn">Test</button>' +
+          //           '<button class="btn-success btn">Test</button>' +
+          //         '</div>' +
+          //       '</div>' +
+          //     '</div>'
+
+          // );
+
+        });
+
+
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

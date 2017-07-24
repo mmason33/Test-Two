@@ -1,1 +1,103 @@
 
+body, h1 ,h2, h3, h4, h5, h6, p, a, button, ul, ol {
+	color: #666;
+	font-family: 'Montserrat', sans-serif;
+}
+
+p {
+	color: #666;
+	font-weight: 300;
+	line-height: 1.75;
+}
+
+strong {
+	font-weight: 500;
+}
+
+.head {
+	padding-top: 10rem;
+}
+
+.hero {
+	height: 500px;
+	.hero-content {
+		z-index: 1;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		height: 500px;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background: linear-gradient(to right, transparent, rgba(0,0,0,.4));
+	}
+}
+
+.text-box {
+	padding: 3rem 0 0;
+}
+
+.text-box-overlay {
+	margin-top: 4rem;
+	padding: 0 !important;
+	height: 500px;
+	&:after {
+		content: '';
+		position: absolute;
+		height: 500px;
+		width: 100%;
+		z-index: 0;
+		background: linear-gradient(90deg,#000,rgba(0,0,0,.75),rgba(0,0,0,.5),transparent)
+	}
+}
+
+.blue {
+	color: #002042;
+}
+
+.white {
+	color: #fff;
+}
+
+.absolute-positioned {
+	position: absolute;
+    z-index: 1;
+    top: 10.6rem;
+}
+
+.light-blue-btn {
+	color: #2777b1;
+    font-weight: 500;
+    border: 1px solid #2777b1;
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+}
+
+.white-btn {
+	color: #fff;
+    font-weight: 500;
+    border: 1px solid #fff;
+    padding: 1rem 2.5rem;
+    border-radius: 5px;	
+}
+
+.bottom-space {
+	margin-bottom: 4rem;
+}
+
+.inline {
+	display: inline;
+}
+
+.pad-2-5 {
+	padding: 2.5% 0;
+}
+
+.pad-5 {
+	padding: 5% 0;
+}
+
+.pad-10 {
+	padding: 10% 0;
+}
