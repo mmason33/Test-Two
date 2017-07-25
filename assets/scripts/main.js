@@ -22,23 +22,35 @@
 
         $(document).ready( function () {
 
-          // $('.page-header h1').text('The Test is working!');
+            $('.menu-main-menu-container').hover( function () {
 
-          // $('body.home').append(
+                $('header.banner').toggleClass('open');
 
-          //   '<div class="jumbotron">' +
-          //     '<h1 class="display-3">Jumbotron Test!</h1>' +
-          //   '</div>' +
-          //     '<div class="container">' +
-          //       '<div class="row">' +
-          //         '<div class="col-md-12">' +
-          //           '<button class="btn-primary btn">Test</button>' +
-          //           '<button class="btn-success btn">Test</button>' +
-          //         '</div>' +
-          //       '</div>' +
-          //     '</div>'
+                $(this).children('ul.sub-menu').toggleClass('animated fadeIn');
 
-          // );
+                $('body').toggleClass('to-right');
+
+              
+            });
+
+            var s = $(".orange-btn");
+            var pos = s.offset();            
+            $(window).scroll(function() {
+
+              var windowpos = $(window).scrollTop();
+
+              if (windowpos >= pos.top) {
+
+                s.addClass("btn-scroll");
+
+              } else {
+
+                s.removeClass("btn-scroll"); 
+
+              }
+
+            });
+
 
         });
 

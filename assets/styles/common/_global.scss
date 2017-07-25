@@ -2,6 +2,10 @@
 body, h1 ,h2, h3, h4, h5, h6, p, a, button, ul, ol {
 	color: #666;
 	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	top: 0;
+	right: 0;
+	transition: ease all 0.4s;
 }
 
 p {
@@ -82,6 +86,19 @@ strong {
     border-radius: 5px;	
 }
 
+.orange-btn {
+	background: #ef6f00;
+	color: #fff;
+    font-weight: 500;
+    padding: 1rem 2.5rem;
+    border-radius: 5px;		
+}
+
+.btn-scroll {
+	position: fixed;
+	top: 0;
+}
+
 .bottom-space {
 	margin-bottom: 4rem;
 }
@@ -100,4 +117,114 @@ strong {
 
 .pad-10 {
 	padding: 10% 0;
+}
+
+#menu-item-23115, #menu-item-23116, #menu-item-23117, #menu-item-23118, #menu-item-23119 {
+	background: #ef6f00;
+	a {
+		.nav-label {
+			color: #fff;
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.open {
+	#menu-item-23106 {
+		ul.sub-menu {
+			display: block !important;
+		}
+	}
+}
+
+header.banner.open {
+	width: 300px !important;
+}
+
+.to-right {
+	position: relative;
+	right: -300px;
+	overflow: hidden;
+	transition: ease all 0.4s;
+}
+
+
+header.banner {
+	position: fixed;
+	background: rgba(0,32,66,.95);
+	box-shadow: 4px 0px 30px #666;
+	width: 55px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	transition: ease width 0.4s;
+	.container {
+		padding: 0;
+	}
+	ul#menu-main-menu {
+		display: block;
+		margin-top: 1.5rem;
+		.menu-item-has-children, .menu-item-23106 {
+			height: 60px;
+			width: 50px;
+			ul.sub-menu {
+				/*background: #002042;*/
+				display: none;
+			    position: relative;
+			    list-style: none;
+			    padding: .5rem 0;
+			    width: 15rem;
+			    right: -3rem;
+			    top: -3rem;
+			    transition: ease all 0.4s;
+			    li {
+			    	padding: .5rem;
+			    	a {
+			    		color: #fff;
+			    		padding: .5rem;
+			    	}
+			    }
+			}
+			&:hover {
+				ul.sub-menu {
+					display: block;
+				}				
+			}
+		}
+	}
+	li {
+		a {
+			padding: 1rem .75rem;
+			.fa {
+				color: #fff;
+				font-size: 1.5rem !important;
+			}
+		}
+	}
+}
+
+
+
+
+.content-info {
+	padding: 2rem 0;
+}
+
+.footer-bottom {
+	position: relative;
+	height: 10px;
+	width: 100%;
+	background: #b6b6b6;
+}
+
+.footer-social-nav {
+	display: inline;
+	padding: 0;
+	li {
+		display: inline;
+		padding: 0 1rem;
+	}
 }
