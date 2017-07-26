@@ -22,6 +22,17 @@
 
         $(document).ready( function () {
 
+
+            $('.menu-btn').click( function () {
+
+              $(this).toggleClass('btn-right');
+              $('header.banner').toggleClass('open');
+              $('body').toggleClass('to-right');
+
+
+            });
+
+
             $('.menu-main-menu-container').hover( function () {
 
                 $('header.banner').toggleClass('open');
