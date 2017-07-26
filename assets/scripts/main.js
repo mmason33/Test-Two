@@ -22,26 +22,30 @@
 
         $(document).ready( function () {
 
+           $('.menu-main-menu-container').prepend(
+               '<div>' +
+                  '<a href="#" class="contact-num">888.888.8888</a>' +
+               '</div>'
+            );
 
-            $('.menu-btn').click( function () {
+            $('.menu-btn').click( function (e) {
+               e.preventDefault();
+               $(this).toggleClass('btn-right');
+               $('header.banner').toggleClass('open');
+               $('body').toggleClass('to-right');
+               console.log($(this));
+            });
 
-              $(this).toggleClass('btn-right');
-              $('header.banner').toggleClass('open');
-              $('body').toggleClass('to-right');
-
-
+            $('.menu-main-menu-container').hover( function () {
+                $('header.banner').toggleClass('open');
+                $(this).children('ul.sub-menu').toggleClass('animated fadeIn');
+                $('body').toggleClass('to-right');
             });
 
 
-            $('.menu-main-menu-container').hover( function () {
-
-                $('header.banner').toggleClass('open');
-
-                $(this).children('ul.sub-menu').toggleClass('animated fadeIn');
-
-                $('body').toggleClass('to-right');
-
-              
+            $('.menu-item-has-children').hover( function () {
+               $('.menu-item-has-children').toggleClass('active');
+               $('.menu-item-23107').toggleClass('active');
             });
 
             var s = $(".orange-btn");
@@ -58,6 +62,12 @@
 
                 s.removeClass("btn-scroll"); 
 
+              }
+
+              if (windowpos > 200) {
+                $('.menu-btn').addClass('blue-menu');
+              } else {
+                $('.menu-btn').removeClass('blue-menu');
               }
 
             });

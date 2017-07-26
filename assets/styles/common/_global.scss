@@ -57,6 +57,8 @@ strong {
 .text-box-overlay {
 	margin-top: 4rem;
 	padding: 0 !important;
+	position: relative;
+	z-index: 0;
 	height: 500px;
 	&:after {
 		content: '';
@@ -145,7 +147,15 @@ strong {
 	}
 }
 
+/*.contact-num {
+	position: absolute;
+	display: none;
+}
+
 .open {
+	.contact-num {
+		display: block;
+	}
 	#menu-item-23106 {
 		ul.sub-menu {
 			display: block !important;
@@ -186,9 +196,9 @@ header.banner {
 		margin-top: 1.5rem;
 		.menu-item-has-children, .menu-item-23106 {
 			height: 60px;
-			width: 50px;
+			width: 60px;
 			ul.sub-menu {
-				/*background: #002042;*/
+				background: #002042;
 				display: none;
 			    position: relative;
 			    list-style: none;
@@ -218,9 +228,65 @@ header.banner {
 			.fa {
 				color: #fff;
 				font-size: 1.5rem !important;
+				position: relative;
+				height: 30px;
+				width: 30px;
 			}
 		}
 	}
+}
+
+.menu-item-has-children.active, .menu-item-23107.active {
+	&:after {
+		display: none;
+	}
+}
+
+header.banner.open {
+	.menu-item-23079::after {
+		content: 'About Us';
+		position: absolute;
+		color: #ef6f00;
+	}
+
+	.menu-item-23080::after {
+		content: 'Programs';
+		position: absolute;
+		color: #ef6f00;
+	}
+
+	.menu-item-23081::after {
+		content: 'Admissions';
+		position: absolute;
+		color: #ef6f00;
+	}
+
+	.menu-item-23082::after {
+		content: 'Locations';
+		position: absolute;
+		color: #ef6f00;
+	}
+
+	.menu-item-23083::after {
+		content: 'Resources';
+		position: absolute;
+		color: #ef6f00;
+	}
+
+	.menu-item-23107::after {
+		content: 'Contact';
+		position: absolute;
+		color: #ef6f00;
+	}
+}
+
+.menu-item-23107:hover .menu-item-23107::after {
+	display: block !important;
+}
+
+.blue-menu {
+	background: rgba(0,32,66,.8);
+	border-radius: 5px;
 }
 
 .menu-btn {
@@ -228,7 +294,7 @@ header.banner {
     display: none;
 	height: 30px;
     width: 40px;
-    top: 22px;
+    top: 10px;
     left: 1rem;
     float: left;
     z-index: 4;
@@ -236,24 +302,24 @@ header.banner {
 		border-top: 2px solid #ef6f00;
 		position: absolute;
 		width: 35px;
-		top: 0px;
-		left: 5px;
+		top: 7px;
+		left: 3px;
 		margin-bottom: .5rem;
 	}
 	#two {
 		border-top: 2px solid #ef6f00;
 		position: absolute;
 		width: 35px;
-		top: 7px;
-		left: 5px;
+		top: 14px;
+		left: 3px;
 		margin-bottom: .5rem;
 	}
 	#three {
 		border-top: 2px solid #ef6f00;
 		position: absolute;
 		width: 35px;
-		top: 14px;
-		left: 5px;
+		top: 21px;
+		left: 3px;
 		margin-bottom: .5rem;
 	}	
 }
@@ -264,7 +330,7 @@ header.banner {
 	right:10px;
 	z-index: 2;
 }
-
+*/
 .content-info {
 	padding: 2rem 0;
 }
@@ -289,7 +355,7 @@ header.banner {
 @media screen and (max-width:1025px) {
 
 
-	.menu-btn {
+/*	.menu-btn {
 		display: block;
 	}
 	
@@ -298,7 +364,7 @@ header.banner {
 		.menu-main-menu-container {
 			display: none;
 		}
-	}
+	}*/
 
 	.hero-content {
 		h1 {
@@ -306,20 +372,20 @@ header.banner {
 		}
 	}
 
-	.btn-right {
+/*	.btn-right {
 		left: 20rem !important;
 	}
 
 	.fixed-logo {
 		width: 150px !important;
-	}
+	}*/
 
 }
 
 
 @media screen and (max-width: 768px) {
 
-	header.banner.open {
+/*	header.banner.open {
 		width: 250px !important;
 		ul#menu-main-menu {
 			.menu-item-has-children, #menu-item-23106 {
@@ -329,10 +395,10 @@ header.banner {
 			}
 		}
 	}
-
-	body.to-right {
+*/
+/*	body.to-right {
 		right: -250px !important;
-	}
+	}*/
 
 	.orange-btn {
 		padding: .75rem 1rem;
@@ -348,9 +414,9 @@ header.banner {
 		left: 0;
 	}
 
-	.btn-right {
+/*	.btn-right {
 		left: 17rem !important;
-	}
+	}*/
 	
 
 }
@@ -362,9 +428,9 @@ header.banner {
 		font-size: 2.15rem;
 	}
 
-	.fixed-logo {
+/*	.fixed-logo {
 		width: 125px !important;
-	}
+	}*/
 
 	h2 {
 		font-size: 1.5rem;
@@ -373,5 +439,15 @@ header.banner {
 	h3 {
 		font-size: 1.35rem;
 	}	
+
+}
+
+@media screen and (max-width: 375px) {
+
+	
+	.absolute-positioned {
+		top: 3rem;
+	}
+	
 
 }
