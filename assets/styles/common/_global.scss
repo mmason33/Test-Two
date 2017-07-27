@@ -1,5 +1,5 @@
 
-body, h1 ,h2, h3, h4, h5, h6, p, a, button, ul, ol {
+body, h1 ,h2, h3, h4, h5, h6, p, a, button {
 	color: #666;
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.35;
@@ -20,18 +20,18 @@ strong {
 }
 
 .head {
-	padding-top: 10rem;
+	padding-top: 15rem;
 }
 
 .hero {
-	height: 500px;
+	height: 600px;
 	.hero-content {
 		z-index: 1;
 	}
 	&:after {
 		content: '';
 		position: absolute;
-		height: 500px;
+		height: 600px;
 		width: 100%;
 		top: 0;
 		left: 0;
@@ -135,7 +135,7 @@ strong {
 	padding: 10% 0;
 }
 
-#menu-item-23115, #menu-item-23116, #menu-item-23117, #menu-item-23118, #menu-item-23119 {
+/*#menu-item-23115, #menu-item-23116, #menu-item-23117, #menu-item-23118, #menu-item-23119 {
 	background: #ef6f00;
 	a {
 		.nav-label {
@@ -145,7 +145,7 @@ strong {
 			text-decoration: none;
 		}
 	}
-}
+}*/
 
 /*.contact-num {
 	position: absolute;

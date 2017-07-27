@@ -20,60 +20,34 @@
       init: function() {
         // JavaScript to be fired on all pages
 
-        $(document).ready( function () {
+        // $(document).ready( function () {
 
-           $('.menu-main-menu-container').prepend(
-               '<div>' +
-                  '<a href="#" class="contact-num">888.888.8888</a>' +
-               '</div>'
-            );
+        //     var s = $(".orange-btn");
+        //     var pos = s.offset();            
+        //     $(window).scroll(function() {
 
-            $('.menu-btn').click( function (e) {
-               e.preventDefault();
-               $(this).toggleClass('btn-right');
-               $('header.banner').toggleClass('open');
-               $('body').toggleClass('to-right');
-               console.log($(this));
-            });
+        //       var windowpos = $(window).scrollTop();
 
-            $('.menu-main-menu-container').hover( function () {
-                $('header.banner').toggleClass('open');
-                $(this).children('ul.sub-menu').toggleClass('animated fadeIn');
-                $('body').toggleClass('to-right');
-            });
+        //       if (windowpos >= pos.top) {
 
+        //         s.addClass("btn-scroll");
 
-            $('.menu-item-has-children').hover( function () {
-               $('.menu-item-has-children').toggleClass('active');
-               $('.menu-item-23107').toggleClass('active');
-            });
+        //       } else {
 
-            var s = $(".orange-btn");
-            var pos = s.offset();            
-            $(window).scroll(function() {
+        //         s.removeClass("btn-scroll"); 
 
-              var windowpos = $(window).scrollTop();
+        //       }
 
-              if (windowpos >= pos.top) {
+        //       if (windowpos > 200) {
+        //         $('.menu-btn').addClass('blue-menu');
+        //       } else {
+        //         $('.menu-btn').removeClass('blue-menu');
+        //       }
 
-                s.addClass("btn-scroll");
-
-              } else {
-
-                s.removeClass("btn-scroll"); 
-
-              }
-
-              if (windowpos > 200) {
-                $('.menu-btn').addClass('blue-menu');
-              } else {
-                $('.menu-btn').removeClass('blue-menu');
-              }
-
-            });
+        //     });
 
 
-        });
+        // });
 
 
 
