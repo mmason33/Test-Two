@@ -22,7 +22,7 @@
 }
 
 .nav-number-mobile {
-    position: absolute;
+/*    position: absolute;
     left: 36%;
     top: -20px;
     color: #fff !important;
@@ -30,6 +30,16 @@
     border-radius: 10px;
     padding: 1rem .5rem;
     font-size: 1.4rem;
+    display: none;*/
+    position: absolute;
+    left: 36%;
+    top: -20px;
+    right: auto;
+    color: #002042!important;
+    border: 1px solid #002042;
+    border-radius: 10px;
+    padding: .5rem;
+    z-index: 1;
     display: none;
 }
 
@@ -352,6 +362,7 @@ a#nav-icon {
 
     #nav-brand {
       width: 125px !important;
+      top: 0 !important;
     }
 
     #primary-menu li {
@@ -359,7 +370,7 @@ a#nav-icon {
     }
 
     .header{
-      padding: 3.5rem 0 !important;
+      padding: 2rem 0 !important;
     }
 
     .menu-item-has-children{

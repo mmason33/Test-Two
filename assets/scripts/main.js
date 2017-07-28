@@ -19,35 +19,28 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-
-        // $(document).ready( function () {
-
-        //     var s = $(".orange-btn");
-        //     var pos = s.offset();            
-        //     $(window).scroll(function() {
-
-        //       var windowpos = $(window).scrollTop();
-
-        //       if (windowpos >= pos.top) {
-
-        //         s.addClass("btn-scroll");
-
-        //       } else {
-
-        //         s.removeClass("btn-scroll"); 
-
-        //       }
-
-        //       if (windowpos > 200) {
-        //         $('.menu-btn').addClass('blue-menu');
-        //       } else {
-        //         $('.menu-btn').removeClass('blue-menu');
-        //       }
-
-        //     });
-
-
-        // });
+        $(document).ready(function(){
+            var body = $("body"),
+                 navOverlay = $(".overlay"),
+                 nav = $("nav#off-canvas-nav"),
+                 navIcon = $("#nav-icon"),
+                 subMenu = $("li.menu-item-has-children > a");
+            navIcon.click(function(e) {
+                e.preventDefault();
+                $(this).toggleClass("open");
+                body.toggleClass("nav-open");
+                nav.toggleClass("open");
+            });
+            navOverlay.click(function() {
+                navIcon.removeClass("open");
+                body.removeClass("nav-open");
+                nav.removeClass("open");
+            });
+            subMenu.click(function(drop) {
+                drop.preventDefault();
+                $(this).parent().toggleClass("open");
+            });
+          });
 
 
 
