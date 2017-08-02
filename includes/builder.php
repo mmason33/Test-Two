@@ -12,6 +12,10 @@
 				require('text-box.php');
 			endif;
 
+			if( get_row_layout() == 'half'):
+				require('half-width.php');
+			endif;
+
 
 		endwhile;
 

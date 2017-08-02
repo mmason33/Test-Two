@@ -1,6 +1,6 @@
 
 body, h1 ,h2, h3, h4, h5, h6, p, a, button {
-	color: #666;
+	color: #002042;
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.35;
 	position: relative;
@@ -47,6 +47,40 @@ strong {
 		line-height: 1.35;
 		margin-bottom:1.2rem;
 		font-weight: 300;
+	}
+}
+
+.hero-image {
+	position: relative;
+	height: 600px;
+	width: 50%;
+	float: left;
+}
+
+.half-n-half {
+	.hero-content {
+		float: right;
+	    position: relative;
+	    top: 0;
+	    height: 600px;
+	    width: 50%;
+	    padding: 0 5%;
+	}
+	.head {
+		padding-top: 12rem;
+	}
+}
+
+.page-id-5 {
+	.text-box-overlay {
+		margin-top: 0;
+		&:after {
+			background: linear-gradient(90deg,rgba(0,0,0,.5),transparent);
+		}
+	}
+	.absolute-positioned {
+		left: -30%;
+		top: 6.6rem;
 	}
 }
 
@@ -135,204 +169,9 @@ strong {
 	padding: 10% 0;
 }
 
-/*#menu-item-23115, #menu-item-23116, #menu-item-23117, #menu-item-23118, #menu-item-23119 {
-	background: #ef6f00;
-	a {
-		.nav-label {
-			color: #fff;
-		}
-		&:hover {
-			text-decoration: none;
-		}
-	}
-}*/
-
-/*.contact-num {
-	position: absolute;
-	display: none;
-}
-
-.open {
-	.contact-num {
-		display: block;
-	}
-	#menu-item-23106 {
-		ul.sub-menu {
-			display: block !important;
-		}
-	}
-}
-
-header.banner.open {
-	width: 300px !important;
-	.menu-main-menu-container {
-		display: block;
-	}
-}
-
-.to-right {
-	position: relative;
-	right: -300px;
-	overflow: hidden;
-	transition: ease all 0.4s;
-}
-
-
-header.banner {
-	position: fixed;
-	background: rgba(0,32,66,.95);
-	box-shadow: 4px 0px 30px #666;
-	width: 55px;
-	height: 100%;
-	top: 0;
-	left: 0;
-	z-index: 3;
-	transition: ease width 0.4s;
-	.container {
-		padding: 0;
-	}
-	ul#menu-main-menu {
-		display: block;
-		margin-top: 1.5rem;
-		.menu-item-has-children, .menu-item-23106 {
-			height: 60px;
-			width: 60px;
-			ul.sub-menu {
-				background: #002042;
-				display: none;
-			    position: relative;
-			    list-style: none;
-			    padding: .5rem 0;
-			    width: 15rem;
-			    right: -3rem;
-			    top: -3rem;
-			    transition: ease all 0.4s;
-			    li {
-			    	padding: .5rem;
-			    	a {
-			    		color: #fff;
-			    		padding: .5rem;
-			    	}
-			    }
-			}
-			&:hover {
-				ul.sub-menu {
-					display: block;
-				}				
-			}
-		}
-	}
-	li {
-		a {
-			padding: 1rem .75rem;
-			.fa {
-				color: #fff;
-				font-size: 1.5rem !important;
-				position: relative;
-				height: 30px;
-				width: 30px;
-			}
-		}
-	}
-}
-
-.menu-item-has-children.active, .menu-item-23107.active {
-	&:after {
-		display: none;
-	}
-}
-
-header.banner.open {
-	.menu-item-23079::after {
-		content: 'About Us';
-		position: absolute;
-		color: #ef6f00;
-	}
-
-	.menu-item-23080::after {
-		content: 'Programs';
-		position: absolute;
-		color: #ef6f00;
-	}
-
-	.menu-item-23081::after {
-		content: 'Admissions';
-		position: absolute;
-		color: #ef6f00;
-	}
-
-	.menu-item-23082::after {
-		content: 'Locations';
-		position: absolute;
-		color: #ef6f00;
-	}
-
-	.menu-item-23083::after {
-		content: 'Resources';
-		position: absolute;
-		color: #ef6f00;
-	}
-
-	.menu-item-23107::after {
-		content: 'Contact';
-		position: absolute;
-		color: #ef6f00;
-	}
-}
-
-.menu-item-23107:hover .menu-item-23107::after {
-	display: block !important;
-}
-
-.blue-menu {
-	background: rgba(0,32,66,.8);
-	border-radius: 5px;
-}
-
-.menu-btn {
-    position: fixed;
-    display: none;
-	height: 30px;
-    width: 40px;
-    top: 10px;
-    left: 1rem;
-    float: left;
-    z-index: 4;
-	#one {
-		border-top: 2px solid #ef6f00;
-		position: absolute;
-		width: 35px;
-		top: 7px;
-		left: 3px;
-		margin-bottom: .5rem;
-	}
-	#two {
-		border-top: 2px solid #ef6f00;
-		position: absolute;
-		width: 35px;
-		top: 14px;
-		left: 3px;
-		margin-bottom: .5rem;
-	}
-	#three {
-		border-top: 2px solid #ef6f00;
-		position: absolute;
-		width: 35px;
-		top: 21px;
-		left: 3px;
-		margin-bottom: .5rem;
-	}	
-}
-
-.fixed-logo {
-	position: absolute;
-	top: 5px;
-	right:10px;
-	z-index: 2;
-}
-*/
 .content-info {
 	padding: 2rem 0;
+	margin-top: 3rem;
 }
 
 .footer-bottom {
@@ -352,53 +191,40 @@ header.banner.open {
 }
 
 
-@media screen and (max-width:1025px) {
+/* HALF SECTION */
 
-
-/*	.menu-btn {
-		display: block;
+.half-section {
+	position: relative;
+	height:500px;
+	width: 100%;
+	margin-top: 3rem;
+	.half-image, .half-content {
+		position: relative;
+		height: 500px;
+		width: 50%;
 	}
-	
-	header.banner {
-		width: 0;
-		.menu-main-menu-container {
-			display: none;
-		}
-	}*/
+	.half-image {
+		float: left;
+	}
+	.half-content {
+		float: right;
+	}
+	.head {
+		padding: 10% !important; 
+	}
+}
+
+@media screen and (max-width:1025px) {
 
 	.hero-content {
 		h1 {
 			font-size: 2.75rem;
 		}
 	}
-
-/*	.btn-right {
-		left: 20rem !important;
-	}
-
-	.fixed-logo {
-		width: 150px !important;
-	}*/
-
 }
 
 
 @media screen and (max-width: 768px) {
-
-/*	header.banner.open {
-		width: 250px !important;
-		ul#menu-main-menu {
-			.menu-item-has-children, #menu-item-23106 {
-				ul.sub-menu {
-					width: 12.65rem !important;
-				}
-			}
-		}
-	}
-*/
-/*	body.to-right {
-		right: -250px !important;
-	}*/
 
 	.orange-btn {
 		padding: .75rem 1rem;
@@ -413,12 +239,6 @@ header.banner.open {
 		top: 0;
 		left: 0;
 	}
-
-/*	.btn-right {
-		left: 17rem !important;
-	}*/
-	
-
 }
 
 
@@ -427,10 +247,6 @@ header.banner.open {
 	.hero-content h1 {
 		font-size: 2.15rem;
 	}
-
-/*	.fixed-logo {
-		width: 125px !important;
-	}*/
 
 	h2 {
 		font-size: 1.5rem;
